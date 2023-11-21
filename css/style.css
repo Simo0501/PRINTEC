@@ -24,9 +24,10 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2rem 0 2rem;
-  width: 95%;
+  margin: 0 auto;
+  width: 100%;
   height: 100px;
+  padding: 2rem;
   background-color:#FFFFFF ;
   border-bottom: 1px solid rgb(235, 235, 235);
 }
@@ -110,13 +111,17 @@ html{
   color: #7000FE;
 }
 @media screen and ( max-width: 1024px ) {
-  .header .btn,
   .header .fa-user,
   .header .fa-star,
   .header-footer{
     display: none;
   }
-  
+}
+@media screen and ( max-width: 1024px ) {
+  .header .btn{
+    width: 2rem;
+    visibility: hidden;
+  }
 }
 .content{
   width: 100%;
