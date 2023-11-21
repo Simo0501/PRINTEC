@@ -26,7 +26,7 @@ html{
   align-items: center;
   margin: 0 2rem 0 2rem;
   width: 95%;
-  height: 150px;
+  height: 100px;
   background-color:#FFFFFF ;
   border-bottom: 1px solid rgb(235, 235, 235);
 }
@@ -62,10 +62,20 @@ html{
   border: none;
   background-color: transparent;
 }
+.btn-item{
+  font-size: large;
+  cursor: pointer;
+}
+.btn-item :hover,
+.btn-item :focus,
+.btn-item :active{
+ color: #7000FE;
+}
+
 .header-footer{
   width: 95%;
-  height: 50px;
-  margin-top: 2rem;
+  height: 40px;
+  margin-top: 1rem;
   background-color: #FFFFFF;
 }
 .header-footer-list{
@@ -79,6 +89,10 @@ html{
   justify-content: center;
   align-items: center;
   list-style-type: none;
+}
+.header-footer-list .home a,
+.header-footer-list .home i{
+  color: #7000FE;
 }
 .header-footer-list-item a{
   text-decoration: none;
@@ -94,6 +108,15 @@ html{
 .header-footer-list-item :focus,
 .header-footer-list-item :active{
   color: #7000FE;
+}
+@media screen and ( max-width: 1024px ) {
+  .header .btn,
+  .header .fa-user,
+  .header .fa-star,
+  .header-footer{
+    display: none;
+  }
+  
 }
 .content{
   width: 100%;
