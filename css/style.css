@@ -131,6 +131,8 @@ html{
   flex-direction: column;
   width: 100%;
   height: 650px;
+  margin: 0;
+  padding: 0;
   background-image: url(./img/Screenshot\ 2023-11-18\ alle\ 16.39.19.png);
   background-size: cover;
 }
@@ -150,13 +152,12 @@ html{
 @media screen and (max-width: 1024px){
   .content .content-title,
   .content p{
-    width: calc(90% - 8rem);
+    width: calc(100% - 8rem);
     margin-left: 8rem;
   }
   
 }
 @media screen and (max-width: 1024px){
-  .content,
   .content p{
     background-position: center;
     width: calc(100% - 8rem);
@@ -164,10 +165,9 @@ html{
   }
   
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 776px){
   .content{
-    width: 90%;
-    background-position: center;
+    background-position: right;
   }
   
 }
@@ -186,22 +186,24 @@ html{
   
 }
 @media screen and (max-width: 776px){
-  .content,
-  .content p,
-  .content .paragraph,
-  .content-title{
-    width: calc(100% - 8rem);
-    margin-left: 8rem;
+  .content{
     background-position: right;
   }
   
 }
 @media screen and (max-width: 776px){
-  .content,
+  .content p,
+  .content .paragraph,
   .content-title{
     width: calc(100% - 8rem);
     margin-left: 8rem;
-    background-position: right;
+  }
+  
+}
+@media screen and (max-width: 776px){
+  .content-title{
+    width: calc(100% - 8rem);
+    margin-left: 8rem;
     font-size: 50px;
   }
   
@@ -219,24 +221,44 @@ html{
   }
   
 }
+@media screen and (max-width: 680px){
+  .content .content-title,
+  .content p,
+  .content .paragraph{
+    width: calc(100% - 3rem);
+    margin-left: 5rem;
+    font-size: 18px;
+  }
+  
+}
+@media screen and (max-width: 680px){
+  .content .content-title{
+    width: calc(100% - 3rem);
+    margin-left: 5rem;
+    font-size: 50px;
+  }
+  
+}
+@media screen and (max-width: 680px){
+  .content .paragraph{
+    margin-left: 9rem;
+  }
+  
+}
 @media screen and (max-width: 548px){
-  .content,
   .content .content-title,
   .content p,
   .content .paragraph{
     width: calc(100% - 3rem);
     margin-left: 3rem;
-    background-position: right;
     font-size: 18px;
   }
   
 }
 @media screen and (max-width: 548px){
-  .content,
   .content .content-title{
     width: calc(100% - 3rem);
     margin-left: 3rem;
-    background-position: right;
     font-size: 50px;
   }
   
@@ -293,6 +315,12 @@ html{
   }
   
 }
+@media screen and (max-width: 680px){
+  .content .btn-content {
+    margin-left: 11rem;
+  }
+  
+}
 @media screen and (max-width: 548px){
   .content .btn-content {
     margin-left: 10rem;
@@ -304,11 +332,50 @@ html{
   display: flex;
   justify-content: space-between;
   font-size: large;
+  margin-top: 1rem;
+  padding-left: 1rem;
 }
 .list-item{
-  gap: 1rem;
-  margin-left: 8rem;
+  margin-right: 5rem;
 }
-.truck{
-  margin-left: 2rem;
+.row .list-item small{
+  margin-left: 0.5rem;
+}
+@media screen and (max-width: 1177px){
+  .list-item{
+    margin-right: 2rem;
+    width: calc( 100% - 2rem - 0.5rem );
+  }
+  
+}
+@media screen and (max-width: 1025px){
+  .list-item,
+  .truck{
+    margin-right: 0.2rem;
+    margin-left: 0;
+  }
+  
+}
+@media screen and (max-width: 992px){
+  .list-item{
+    margin-right: 0.2rem;
+    width: calc( 100% - 0.2rem );
+  }
+  
+}
+.row-star{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.row-star-list{
+  display: flex;
+  list-style-type: none;
+  gap: 0.8rem;
+}
+.fa-star{
+  color:#00B67A ;
+}
+.opacity{
+  color: #CCD6DF;
 }
