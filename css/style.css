@@ -562,6 +562,10 @@ html{
   visibility: visible;
   background-color: #000000 ;
 }
+.circle i:hover .btn-card{
+  visibility: visible;
+  background-color: #000000;
+}
 .card .btn-card:hover{
   background-color: #7000FE;
 }
