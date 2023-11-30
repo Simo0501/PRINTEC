@@ -556,4 +556,71 @@ html{
   padding: 0.8rem 6.5rem;
   color: white;
   background-color: #000000;
+  visibility: hidden;
+}
+.card:hover .btn-card{
+  visibility: visible;
+  background-color: #000000 ;
+}
+.card .btn-card:hover{
+  background-color: #7000FE;
+}
+.card-img-circle{
+  display: flex;
+  position: relative;
+}
+.card-column-circle{
+  display: flex;
+  flex-direction: column;
+}
+.circle{
+  background-color: #7000FE;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+  visibility: hidden;
+
+}
+.circle-one{
+  position: absolute;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  padding-left: 9px;
+  padding-top: 4px;
+  border-radius: 100%;
+  top: 3rem;
+  right: 2rem;
+}
+.circle-one .fa-star{
+  color: black;
+}
+.circle-two{
+  position: absolute;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  padding-left: 9px;
+  padding-top: 4px;
+  border-radius: 100%;
+  top: 6rem;
+  right: 2rem;
+}
+.circle-three{
+  position: absolute;
+  background-color:white;
+  width: 35px;
+  height: 35px;
+  padding-left: 9px;
+  padding-top: 4px;
+  border-radius: 100%;
+  top: 9rem;
+  right: 2rem;
+}
+.card-img-circle:hover .circle{
+  visibility: visible;
+}
+.circle:hover{
+  background-color: #7000FE;
 }
