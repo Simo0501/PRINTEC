@@ -628,3 +628,86 @@ html{
 .circle:hover{
   background-color: #7000FE;
 }
+.content-cloud{
+  display: flex;
+  justify-content: space-around;
+  background-color: #EDEEF1;
+}
+.content-img-cloud{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+.content-text-cloud{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10rem;
+}
+.content-text-cloud h2{
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  font-size: 45px;
+  line-height: 50px;
+}
+.num{
+  font-size: 20px;
+}
+.circle-time{
+  display: flex;
+  flex-direction: column;
+}
+.circle-time-list{
+  display: flex;
+  gap: 3rem;
+}
+.circle-time-list .circle-time-list-item{
+  display: flex;
+  flex-direction: column;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: white;
+  color: #000000;
+  margin-top: 1.3rem;
+}
+.circle-time-list .circle-time-list-item small{
+  padding-top: 7px;
+  padding-left: 9px;
+}
+.circle-time-list .circle-time-list-item span{
+  margin-top: 1.5rem;
+}
+.circle-time-list-item .btn-circle small{
+  text-align: center;
+  padding-bottom: 5px;
+}
+.circle-time-list-item .btn-circle{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.7rem;
+  border: transparent;
+  border-radius: 40px;
+  background-color: #7000FE;
+  margin-right: 21rem;
+  margin-top: 3rem;
+  width: 9rem;
+  color: white;
+  font-size: medium;
+}
+.btn-circle .fa-arrow-right{
+  transform: rotate(-45deg);
+}
+.btn-circle:hover .fa-arrow-right,
+.btn-circle:focus .fa-arrow-right,
+.btn-circle:active .fa-arrow-right{
+  transform: rotate(0);
+}
+.btn-circle:hover,
+.btn-circle:focus,
+.btn-circle:active{
+  background-color: #000000;
+  transition: background-color 1.3s;
+}
