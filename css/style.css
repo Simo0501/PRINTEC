@@ -384,6 +384,7 @@ html{
 }
 .box-container{
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -393,6 +394,7 @@ html{
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-top: 3rem;
   width: calc( 100% / 3 - 2rem);
   height: 300px;
@@ -498,6 +500,13 @@ html{
 }
 .box-up:hover::after{
   width: 110%;
+}
+@media screen and ( max-width: 600px){
+  .box,
+  .box-supersized,
+  .box-up{
+    width: calc( 100% - 2rem );
+  }  
 }
 .discover-title{
   text-align: center;
