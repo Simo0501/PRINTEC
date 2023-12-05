@@ -48,6 +48,10 @@ html{
 .btn input{
   border: none;
 }
+.header .fa-bars{
+  display: none;
+}
+
 .btn-svg{
   border: none;
   background-color: transparent;
@@ -127,6 +131,11 @@ html{
   .header .btn{
     width: 2rem;
     visibility: hidden;
+  }
+}
+@media screen and ( max-width: 1024px) {
+  .header .fa-bars{
+    display: block;
   }
 }
 .content{
@@ -366,6 +375,12 @@ html{
   }
   
 }
+@media screen and (max-width: 600px){
+  .row .truck{
+    width: calc( 100% - 0.2rem );
+  }
+  
+}
 .row-star{
   display: flex;
   justify-content: center;
@@ -399,6 +414,7 @@ html{
   width: calc( 100% / 3 - 2rem);
   height: 300px;
   padding: 2rem;
+  margin-left: 1rem;
   border-radius: 2rem;
   overflow: hidden;
 }
@@ -537,11 +553,15 @@ html{
   color: #7000FE;
 }
 .card-product{
+  padding: 2rem;
+  padding-left: 4rem;
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  margin-top: 5rem;
   background-color: #F5F7FA;
+  margin-top: 5rem;
+}
+.card-img-circle img{
+  border-radius: 2rem;
 }
 .card{
   display: flex;align-items: center;
@@ -580,66 +600,73 @@ html{
 }
 .card-img-circle{
   display: flex;
-  position: relative;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+.card-img-circle:hover{
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 .card-column-circle{
+  position: relative;
   display: flex;
   flex-direction: column;
+  top: 1rem;
+  right: 2rem;
 }
-.circle{
-  background-color: #7000FE;
-  width: 30px;
-  height: 30px;
+.circle i{
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
   cursor: pointer;
+  background-color: white;
+  padding-left: 9px;
+  padding-top: 9px;
+  margin-bottom: 0.5rem;
+}
+.circle{
   visibility: hidden;
-
 }
-.circle-one{
-  position: absolute;
-  background-color: white;
-  width: 35px;
-  height: 35px;
-  padding-left: 9px;
-  padding-top: 4px;
-  border-radius: 100%;
-  top: 3rem;
-  right: 2rem;
-}
-.circle-one .fa-star{
+.circle .fa-star{
   color: black;
-}
-.circle-two{
-  position: absolute;
-  background-color: white;
-  width: 35px;
-  height: 35px;
-  padding-left: 9px;
-  padding-top: 4px;
-  border-radius: 100%;
-  top: 6rem;
-  right: 2rem;
-}
-.circle-three{
-  position: absolute;
-  background-color:white;
-  width: 35px;
-  height: 35px;
-  padding-left: 9px;
-  padding-top: 4px;
-  border-radius: 100%;
-  top: 9rem;
-  right: 2rem;
 }
 .card-img-circle:hover .circle{
   visibility: visible;
 }
-.circle:hover{
+.circle i:hover{
   background-color: #7000FE;
+}
+@media screen and ( max-width: 600px) {
+  .card-img-circle .sticker,
+  .card-img-circle .mouse{
+    display: none;
+  }  
+}
+@media screen and ( max-width: 600px) {
+  .card-img-circle .phone img,
+  .card-img-circle .badge img{
+    width: 220px;
+    height: 220px;
+  }  
+}
+@media screen and ( max-width: 600px) {
+  .circle{
+    top: 0;
+    right: 2rem;
+  }  
+}
+@media screen and ( max-width: 568px) {
+  .card-img-circle .phone img,
+  .card-img-circle .badge img{
+    width: 200px;
+    height: 200px;
+  }  
 }
 .content-cloud{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   background-color: #EDEEF1;
   height: 850px;
 }
