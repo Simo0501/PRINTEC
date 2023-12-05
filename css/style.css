@@ -687,8 +687,18 @@ html{
 @media screen and ( max-width: 568px) {
   .card-img-circle .phone img,
   .card-img-circle .badge img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+  }  
+}
+@media screen and ( max-width: 480px ) {
+  .card-img-circle .phone{
+    display: none;
+  }  
+}
+@media screen and ( max-width: 480px ) {
+  .card-img-circle .badge{
+    width: 100%;
   }  
 }
 .content-cloud{
