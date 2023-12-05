@@ -876,3 +876,39 @@ html{
 
   }
 }
+.dicover-row-container{
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.discover-row-img-wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+}
+.discover-row-img-wrapper img{
+  border-radius: 3rem;
+  width: 100%;
+}
+.discover-row-number{
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  z-index: 1;
+  opacity: 0.5;
+  color: #7000FE;
+  font-size: 12rem;
+}
+.discover-row-column{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.discover-row-column-1 .discover-row-column-trianle{
+  margin-top: 12rem;
+  margin-right: 4rem;
+}
+.discover-row-column-1 .discover-row-img{
+  width: 100%;
+  padding: 10rem 0 0 7rem;
+}
