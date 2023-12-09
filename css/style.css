@@ -942,4 +942,114 @@ html{
     margin-bottom: 2rem;
   }
 }
+.print-catagories-content h2{
+  font-size: 40px;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.print-catagories-content p{
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.print-catagories-content .text-paragraph{
+  margin-left: 40rem;
+}
+.container-img-print{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.text-purple{
+  color: #7000FE;
+}
+.card-print{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-print img{
+  border-radius: 2rem;
+}
+.card-print a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.card-print .a-small{
+  font-size: small;
+  font-weight: 400;
+  color: grey;
+  margin-top: 0.5rem;
+}
+.card-print{
+  position: relative;
+}
+.card-print .number{
+  position: absolute;
+  left: 13.2rem;
+  top: 16rem;
+  font-size: small;
+  font-weight: 600;
+  color: black;
+}
+.business .number{
+  font-size: small;
+  font-weight: 600;
+  color: black;
+}
+.T-shirts .number{
+  position: absolute;
+  left: 11rem;
+  top: 16rem;
+}
+.packaging .number{
+  position: absolute;
+  left: 12rem;
+  top: 16rem;
+}
+@media screen and ( max-width: 1300px ) {
+  .card-print img{
+    width: 202px;
+    height: 202px;
+}
+}
+@media screen and ( max-width: 1168px ) {
+  .packaging{
+    display: none;
+}
+}
+@media screen and ( max-width: 850px ) {
+  .T-shirts{
+    display: none;
+}
+}
+@media screen and ( max-width: 650px ) {
+  .format{
+    display: none;
+}
+}
+@media screen and ( max-width: 600px ) {
+  .card-print img{
+    width: 250px;
+    height: 250px;
+}
+}
+@media screen and ( max-width: 500px ) {
+  .card-print img{
+    width: 220px;
+    height: 220px;
+}
+}
+
+@media screen and ( max-width: 400px ) {
+  .card-print img{
+    width: 190px;
+    height: 190px;
+}
+}
 
