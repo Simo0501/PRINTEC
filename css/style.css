@@ -876,64 +876,70 @@ html{
 
   }
 }
-.discover-row-container{
+.content-discover-card{
   display: flex;
-  padding: 1rem;
-  gap: 10vh;
-}
-.discover-row-column--1{
-  display: flex;
-  align-items: center;
-  margin-bottom: 50vh;
-  margin-left: 5vh;
-}
-.discover-row-column--2{
-  display: flex;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
-.triangle-viola-img-discover-2{
-  position: relative;
-  display: flex;
-  align-items: flex-start;
+.column-discover-card .card-discover-woman,
+.column-discover-card-2 .card-discover-sim{
+  border-radius: 2rem;
 }
-.triangle-viola-img-discover-2 .discover-row-column-triangle-viola{
-  position: absolute;
-  top: -3rem;
-  left: -3rem;
-  z-index: 1;
+.column-discover-card .triangle-blu{
+  margin-bottom: 25rem;
+  margin-right: 6rem;
 }
-.discover-row-img-wrapper img{
-  border-radius: 3rem;
-  width: 100%;
+.column-discover-card-2 .triangle-viola{
+  margin-bottom: 25rem;
 }
-.discover-row-column--1 .discover-row-img-wrapper{
-  margin-left: 8vh;
+
+@media screen and ( max-width: 1300px ) {
+  .column-discover-card .triangle-blu{
+    display: none;
+  }
 }
-.discover-row-img-wrapper{
-  position: relative;
-  overflow: hidden;
+@media screen and ( max-width: 1035px ) {
+  .column-discover-card-2 .triangle-viola{
+    display: none;
+  }
 }
-.discover-row-column--2{
-  margin-top: 3vh;
+@media screen and ( max-width: 1035px ) {
+  .card-discover-woman,
+  .card-discover-sim{
+    width: 450px;
+    height: 480px;
+    margin-left: 2rem;
+  }
 }
-.discover-row-number{
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  color: #7000FE;
-  font-size: 12rem;
+@media screen and ( max-width: 980px ) {
+  .card-discover-woman,
+  .card-discover-sim{
+    width: 400px;
+    height: 430px;
+    margin-left: 2rem;
+  }
 }
-.blu{
-  top: 20rem;
-  color: #5c79ef;
+@media screen and ( max-width: 975px ) {
+  .card-discover-woman,
+  .card-discover-sim {
+    width: 280px;
+    height: 310px;
+  }
 }
-.discover-row-title{
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
+@media screen and ( max-width: 639px ) {
+  .card-discover-woman,
+  .card-discover-sim {
+    width: 500px;
+    height: 530px;
+    margin-bottom: 2rem;
+  }
 }
-.discover-row-text{
-  margin-bottom: 5rem;
+@media screen and ( max-width: 500px ) {
+  .card-discover-woman,
+  .card-discover-sim {
+    width: 400px;
+    height: 430px;
+    margin-bottom: 2rem;
+  }
 }
+
